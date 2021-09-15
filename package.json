@@ -1,0 +1,23 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "our first node app",
+  "main": "webserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifotn/comp2068-f21-lesson1.git"
+  },
+  "author": "ifotn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifotn/comp2068-f21-lesson1/issues"
+  },
+  "homepage": "https://github.com/ifotn/comp2068-f21-lesson1#readme",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "weather-js": "^2.0.0"
+  }
+}
