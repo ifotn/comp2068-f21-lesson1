@@ -12,11 +12,13 @@ http.createServer((req, res) => {
     res.write('<h1>Tax Calculator</h1>')
 
     // read the url parameter string (the part after the ?)
-    let query = url.parse(req.url, true).query
-    //console.log(query)
+    //let query = url.parse(req.url, true).query
+    let query = new URLSearchParams(req.url)
+    console.log(query.get('subtotal'))
 
     // grab subtotal param from url.  use parseFloat so js doesn't treat this as a string
-    let subTotal = parseFloat(query.subtotal)
+    //let subTotal = parseFloat(query.subtotal)
+    let subTotal = query.get('subtotal')
 
     // calc tax & total
     let tax = subTotal * 0.13
